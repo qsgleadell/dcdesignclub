@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Club - Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title"><h1>Sketch Club</h1></div>
+    <div class="header">
+        <div class="icon-container">
+            <a href="profile.html"><img src="icons/profileicon.png" alt="Profile" class="icon"></a>
+            <span>Profile</span>
+        </div>
+        <div class="icon-container selected">
+            <a href="chat.html"><img src="icons/chaticon.png" alt="Chat" class="icon"></a>
+            <span>Chat</span>
+        </div>
+        <div class="icon-container">
+            <a href="gallery.html"><img src="icons/galleryicon.png" alt="Gallery" class="icon"></a>
+            <span>Gallery</span>
+        </div>
+        <div class="icon-container">
+            <a href="missions.html"><img src="icons/missionsicon.png" alt="Missions" class="icon"></a>
+            <span>Missions</span>
+        </div>
+        <div class="icon-container">
+            <a href="clubs.html"><img src="icons/clubsicon.png" alt="Clubs" class="icon"></a>
+            <span>Clubs</span>
+        </div>
+        <div class="icon-container">
+            <a href="feed.html"><img src="icons/feedicon.png" alt="Feed" class="icon"></a>
+            <span>Feed</span>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="chat-container">
+            <div class="chat-input">
+                <input type="text" placeholder="Add a Comment">
+                <br>
+                <button onclick="addComment()">Add Comment</button>
+            </div>
+            <hr>
+            <div class="chat-header">
+                <h4>Chat</h4>
+                <p>Chat Guidelines...remember...no personal info like age or location in DC...thanks :)</p>
+            </div>
+            <hr>
+            <div class="chat-messages">
+                <div class="message">
+                    
+                    <div class="comment-block">
+                        <p class="chat-username-pfp"><img src="icons/profilepicture.png" alt="Profile Picture" class="jobspfp"><br>Starr Lightz</p> 
+                        <p class="chatcomment">Im working on a song ! <button class="flag">Flag</button></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="comment-block">
+                        <p class="chat-username-pfp"><img src="icons/profilepicture.png" alt="Profile Picture" class="jobspfp"><br>Starr Lightz</p> 
+                        <p class="chatcomment">Im working on a song ! <button class="flag">Flag</button></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="message">
+                    <div class="comment-block">
+                        <p class="chat-username-pfp"><img src="icons/profilepicture.png" alt="Profile Picture" class="jobspfp"><br>Starr Lightz</p> 
+                        <p class="chatcomment">Im working on a song ! <button class="flag">Flag</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

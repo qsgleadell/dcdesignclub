@@ -1,0 +1,668 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4496ee; 
+}
+
+.page {
+    background-color: white;
+}
+
+.title {
+    color:white;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content:space-evenly;
+    height: 7vw; 
+}
+
+.missions-container {
+    display: flex; /* Makes the container a flexbox */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 10vh; /* Full viewport height, adjust as necessary */
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.missionsheader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Align items vertically */
+    width: 80%; /* Adjust width as necessary */
+    padding: 1vw 0; /* Vertical padding */
+}
+
+.nav-item {
+    padding: 10px; /* Padding around each item for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    text-align: center;
+}
+
+
+.header img {
+    padding-top: 5%;
+    width: 6vw; 
+    height: 4vw; 
+    cursor: pointer;
+}
+
+.missionsheader img {
+    padding-top: 5%;
+    width: 6vw; 
+    height: 4vw; 
+    cursor: pointer;
+}
+
+.icon-container {
+    display: inline-block;
+    text-align: center;
+    background-color: #FFC300;
+    width: 100%; /* Assign a specific width to each container */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-right: 0.05vw solid #DBA901; /* Transparent border for consistent sizing */
+    border-left: 0.05vw solid #DBA901;
+}
+
+.icon-container.selected, .icon-container:hover {
+    background-color: #DBA901; /* Highlight color when selected or hovered */
+    border-color: #DBA901; /* Consistent border color change */
+}
+
+.icon-container img {
+    width: 40%; /* Adjusted to a percentage of its container for consistency */
+}
+
+.icon-container span {
+    display: block;
+    font-size: 0.8vw;
+    color: black;
+    font-weight: bold;
+    margin-top: 0.5vw;
+}
+
+.nav-item span {
+    display: block;
+    font-size: 0.8vw;
+    color: black;
+    font-weight: bold;
+    margin-top: 0.5vw;
+}
+
+.action-button span {
+    display: block;
+    font-size: 0.8vw;
+    color: black;
+    font-weight: bold;
+    margin-top: 0.5vw;
+}
+
+.action-button img {
+    min-height:2vw;
+    width: 50%;
+}
+
+
+.profile-actions span {
+    display: block; 
+    font-size: 0.8vw; 
+    color: black; 
+    font-weight: bold;  
+}
+
+.main-content {
+    padding: 0px;
+    background-color: #4496ee; 
+}
+
+.chat-container {
+    width: 100%;
+    margin: auto;
+}
+
+.club-chat-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #4496ee;
+}
+
+.chat-header h4, .chat-header p {
+    margin-left: 1vw; 
+    color: yellow; 
+}
+
+.message {
+    background-color: #FFFFFF;
+    padding: 2vw; 
+    position: relative;
+}
+
+.message p {
+    margin: 0;
+}
+
+.flag {
+    background-color: orange;
+    border: none;
+    padding: 0.5vw 1vw; 
+    position: absolute;
+    right: 1vw; 
+    top: 1vw; 
+    cursor: pointer;
+}
+
+.chat-input {
+    display: flex;
+    /* margin-top: 2vw; */
+    margin-bottom: 1vw;
+    padding-top:1%;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 1vw;
+    margin-top:1%;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.chat-messages {
+    background-color: white;
+}
+
+.chat-input button {
+    padding: .5vw 2vw;
+    margin-right: 1vw;
+    background-color: #FFC300;
+    border: none;
+    cursor: pointer;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 2vw; */
+    background-color: #f4f4f4;
+}
+
+.left-panel, .center-panel, .right-panel {
+    flex: 1; /* Each panel takes equal width */
+    padding: 1vw;
+    display: flex;
+    flex-direction: column; /* Aligns content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+.center-panel {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2%;
+    border-color: lightgray;
+    margin:0;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+.profile-pic {
+    border-radius: 8%; 
+    border-style: solid;
+    border-color: #a6c8ea;
+    border-width: 3px;
+    margin-bottom: 1vw;
+}
+
+.small-award {
+    max-width: 10vw; 
+    margin: 0.5vw;
+    justify-content: center;
+}
+.small-actions {
+    width: 12vw; 
+    margin: 1vw;
+}
+
+.header button {
+    margin-top: 10px;
+    background-color: #FFC300;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-container:hover {
+    background-color: #DBA901;
+}
+
+.icon-container::selection {
+    background-color: #DBA901;
+}
+
+.awards, .profile-actions {
+    align-items: center; /* Centers the awards and actions horizontally */
+    justify-content: center; /* Evenly distributes space around items */
+}
+
+.offline-status {
+    color: red; 
+    font-weight: bold; 
+}
+
+.profile-info h2, .profile-info p {
+    margin: 0.5vw 0; 
+    text-align: center;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;  /* Stacks children elements vertically */
+    align-items: center;     /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically, not necessary if you want top-down alignment */
+    width: 100%;             /* Takes the full width of its parent container or adjust as needed */
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;      /* Centers the text inside the container */
+}
+
+.profile-info button {
+    background-color: #FFC300;
+    margin:.5vw;
+    border-radius: 30%;
+    padding:1%;
+    border-color: transparent;
+}
+
+.profile-banner {
+    padding-bottom: 1vw;
+    padding-left: 2px;
+    height: 15vh;
+    color:white;
+    
+}
+
+.status-bar {
+    width: 50%;
+    background-color: #ccc;
+    height: 2vw;
+    border-color: black;
+    border-style:solid;
+    border-width: 3px;
+}
+
+.status-bar-fill {
+    height: 87%;
+    margin:2px;
+    background-color: rgb(77, 191, 77);
+    width: 73%;
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1vw;
+    margin-top: 1vw;
+}
+
+.store::before, .gift::before {
+    content: '';
+    display: inline-block;
+    width: 5vw; 
+    height: 5vw;
+    margin-right: 0.5vw; 
+    background: url('icon-placeholder.png'); /* Placeholder for icons */
+}
+
+@media (min-width: 1024px) {
+    .icon-button::before {
+        width: 2vw; /* Smaller size on larger screens */
+        height: 2vw;
+    }
+}
+
+.comments-section {
+    background-color: white;
+    color: black;
+    padding-left: 1vw;
+    padding-right:1vw;
+    padding-top: 1vw;
+}
+
+.comments-section h2 {
+    color: #FFC300;
+}
+
+.post-comment-area {
+    display: flex;
+    margin-bottom: 2vw;
+}
+
+.post-comment-area textarea {
+    flex: 1;
+    padding: 0.5vw;
+    margin-right: 1vw;
+    border: 2px solid #FFC300;
+    border-radius: 5px;
+}
+
+.post-comment-area button {
+    background-color: #FFC300;
+    border: none;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comments-list {
+    margin-top: 1vw;
+    background-color: white;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 1vw;
+}
+
+.comment-block {
+    display: flex;
+    width: 100%;
+}
+
+.chat-username-pfp {
+    flex: 1;
+    max-width: 15%;
+    float: left;
+}
+
+.chatcomment {
+    flex: 1;
+    vertical-align: center;
+    padding-top: 2%;
+    width:85%;
+}
+
+.user-icon {
+    width: 50px; 
+    height: 50px;
+    margin-right: 1vw;
+    border-radius: 50%;
+}
+
+.comment-content {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1vw;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.comment-content p {
+    margin: 0;
+}
+
+.comment-content span {
+    font-size: 0.8vw;
+    color: #999999;
+}
+
+.instructions-section {
+    background-color: #4496ee; 
+    padding: 1vw;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.tab-icons {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1.5vw 0; 
+}
+
+.recovery-instructions p {
+    color: #666; 
+    font-size: 1.2vw; 
+    padding: 1vw;
+    text-align: center;
+}
+
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw;
+    background-color: #ffffff; /* White background for the content area */
+}
+
+.gallery-header {
+    display: flex;
+}
+
+.gallery-header span {
+    display: block; 
+    font-size: 0.8vw; 
+    color: black; 
+    font-weight: bold; 
+    margin-top: 0.5vw; 
+}
+
+.sub-tab {
+    height:2vw;
+    background-color: #4496ee ;
+    flex: 1;
+    text-align: center; 
+    justify-content: center;
+    /* border-color: #2a71bc; */
+    border-color:gray;
+    border-style: solid;
+    border-width: .75px;
+}
+
+.doodle-placeholder {
+    width: 20vw; /* Adjustable width for each doodle */
+    height: 12vw; /* Making it square */
+    background-color: #ddd; /* Light gray background for placeholders */
+    margin: 1vw;
+    border:darkgray;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    color: #333;
+    border-radius: 5px; 
+}
+
+.jobs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Consistently space items regardless of container size */
+    align-items: flex-start; /* Align items at the start of the container */
+    padding: 20px;
+    margin: 0 auto; /* Center the container itself on the page */
+    width: 60%; /* Adjust the width as necessary */
+    background-color: white;
+}
+
+.job {
+    background-color: #f4f4f4; /* Light grey background for job cards */
+    border: 1px solid #ccc; /* Border for distinction */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 2%;
+    width: 200px; /* Fixed width for consistency */
+    text-align: center; /* Centering the text */
+}
+
+.jobspfp {
+    max-width: 12vw;
+    max-height: 10vw;
+    color: darkgray;
+}
+
+.job-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4496ee; /* Light blue button */
+    border: none;
+    cursor: pointer;
+    display: block; /* Makes buttons take full width */
+    color: white; /* White text for visibility */
+    margin: 5px auto; /* Center buttons */
+}
+
+.job-button:hover {
+    background-color: #367ABD; /* Darker blue on hover */
+}
+
+.club-page-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar, .right-panel {
+    padding: 20px;
+}
+
+.sidebar {
+    /* background-color: #FFC300; */
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.clubmain-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    flex: 3;
+    background-color: #ffffff;
+    /* padding: 20px; */
+    border-style:solid;
+    border-color:lightgray;
+    border-width:2px;
+    border-radius: 2%;
+    text-align: center;      /* Centers the text inside the main content */
+}
+
+
+.right-panel {
+    flex: 1;
+}
+
+.action-button, .leave-button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.report-club-button {
+    display: inline-block;
+    border-radius: 15%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 4vh;
+    margin-top: 10%;
+    padding: 10px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.club-details {
+    width: 80%;              /* Adjust width as needed to give some padding around */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;      /* Ensures that text within details is centered */
+    padding: 10px;           /* Adds padding around text for better layout */
+}
+
+.club-image {
+    width: 45%;
+    margin-bottom: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 2%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4496ee;
+    /* padding-top: 1vw; */
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    flex-direction: column; /* Aligns content vertically */
+    display: inline-block;
+    text-align: center;
+    width: 100%; /* Assign a specific width to each container */
+}
+
+.clubs-nav-icon {
+    min-width: 50%;
+    height: 3.5vw;
+    max-width: 50%;
+}
+
+.nav-button:hover {
+    background-color: #DBA901;
+}
+
+.leave-button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    width: auto;             /* Allows the button to shrink/grow with text */
+    background-color: #4496ee;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.leave-button:hover {
+    background-color: #367ABD;
+}
